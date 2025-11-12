@@ -39,9 +39,9 @@
 						<connectedAppClientSecret>a8055e977df843bCB9fFB5683E52A9BA</connectedAppClientSecret>
 						<connectedAppGrantType>client_credentials</connectedAppGrantType>
 						<businessGroupId>a62f6236-0b02-4e5f-a8eb-dc5e37aedb12</businessGroupId>
-						<environment>${env}</environment>
-						<target>SharedSpace</target>
-						<applicationName>${appname}</applicationName>
+						<environment>Dev</environment>
+						<target>DemoSpace</target>
+						<applicationName>githubaction</applicationName>
 						<replicas>1</replicas>
 						<vCores>0.1</vCores>
 						<deploymentSettings>
