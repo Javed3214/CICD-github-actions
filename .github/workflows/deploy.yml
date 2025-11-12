@@ -31,8 +31,8 @@ jobs:
             <servers>
               <server>
                 <id>cloudhub2</id>
-                <username>${{ secrets.USER }}</username>
-                <password>${{ secrets.PASS }}</password>
+                <username>76f002fff9c041d78a663b0a26bc008f</username>
+                <password>a8055e977df843bCB9fFB5683E52A9BA</password>
               </server>
               <server>
                 <id>anypoint-exchange-v3</id>
@@ -60,8 +60,8 @@ jobs:
             <servers>
               <server>
                 <id>cloudhub2</id>
-                <username>${{ secrets.USER }}</username>
-                <password>${{ secrets.PASS }}</password>
+                <username>76f002fff9c041d78a663b0a26bc008f</username>
+                <password>a8055e977df843bCB9fFB5683E52A9BA</password>
               </server>
               <server>
                 <id>anypoint-exchange-v3</id>
@@ -74,13 +74,13 @@ jobs:
       - name: Deploy to dev
         run: |
           mvn deploy -DmuleDeploy -DskipMunitTests \
-            -Danypoint.username="${{ secrets.USER }}" \
-            -Danypoint.password="${{ secrets.PASS }}" \
+            -Danypoint.username=76f002fff9c041d78a663b0a26bc008f \
+            -Danypoint.password=a8055e977df843bCB9fFB5683E52A9BA \
             -Danypoint.platform.client_id=777df98bcd084a75bfe4b973a9e53516 \
             -Danypoint.platform.client_secret=AF10d59Ee8C64EFb85BCc8474b2aA7eD \
             -Danypoint.businessGroup=a62f6236-0b02-4e5f-a8eb-dc5e37aedb12 \
-            -Denv="${{ secrets.ENV }}" \
-            -Dappname="${{ secrets.APP_NAME }}"
+            -Denv=Dev \
+            -Dappname=githubaction
 
   deployuat:
     needs: deploydev
